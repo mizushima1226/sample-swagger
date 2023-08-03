@@ -13,55 +13,15 @@ servers:
 tags:
   - name: pet
     description: ペット
-  - name: store
-    description: ペットの販売店舗
-  - name: user
-    description: アプリの利用ユーザー
 paths:
   /pet:
     $ref: "paths/pet/index.yml"
-  /pet/findByStatus:
-    $ref: "paths/pet/find-by-status.yml"
-  /pet/findByTags:
-    $ref: "paths/pet/find-by-tags.yml"
-  /pet/{petId}:
-    $ref: "paths/pet/pet-id.yml"
-  /pet/{petId}/uploadImage:
-    $ref: "paths/pet/upload-image.yml"
-  /store/inventory:
-    $ref: "paths/store/inventory.yml"
-  /store/order:
-    $ref: "paths/store/order.yml"
-  /store/order/{orderId}:
-    $ref: "paths/store/order-id.yml"
-  /user:
-    $ref: "paths/user/index.yml"
-  /user/createWithList:
-    $ref: "paths/user/create-with-list.yml"
-  /user/login:
-    $ref: "paths/user/login.yml"
-  /user/logout:
-    $ref: "paths/user/logout.yml"
-  /user/{username}:
-    $ref: "paths/user/username.yml"
 components:
   schemas:
-    Address:
-      $ref: "schemas/address.yml"
-    ApiResponse:
-      $ref: "schemas/api-response.yml"
-    Category:
-      $ref: "schemas/category.yml"
-    Customer:
-      $ref: "schemas/customer.yml"
-    Order:
-      $ref: "schemas/order.yml"
     Pet:
       $ref: "schemas/pet.yml"
     Tag:
       $ref: "schemas/tag.yml"
-    User:
-      $ref: "schemas/user.yml"
   securitySchemes:
     petstore_auth:
       type: oauth2

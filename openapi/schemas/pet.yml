@@ -14,16 +14,10 @@ properties:
     $ref: "category.yml"
   photoUrls:
     type: array
-    xml:
-      wrapped: true
     items:
       type: string
-      xml:
-        name: photoUrl
   tags:
     type: array
-    xml:
-      wrapped: true
     items:
       $ref: "tag.yml"
   status:
