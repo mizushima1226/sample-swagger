@@ -9,8 +9,5 @@ properties:
     example: fehguy
   address:
     type: array
-    xml:
-      name: addresses
-      wrapped: true
     items:
       $ref: "address.yml"
