@@ -10,13 +10,13 @@ post:
         schema:
           type: array
           items:
-            $ref: "../../schemas/user.yml"
+            $ref: "../../openapi.yml#/components/schemas/User"
   responses:
     "200":
       description: Successful operation
       content:
         application/json:
           schema:
-            $ref: "../../schemas/user.yml"
+            $ref: "../../openapi.yml#/components/schemas/User"
     default:
       description: successful operation

@@ -25,7 +25,7 @@ get:
           schema:
             type: array
             items:
-              $ref: "../../schemas/pet.yml"
+              $ref: "../../openapi.yml#/components/schemas/Pet"
     "400":
       description: Invalid status value
   security:

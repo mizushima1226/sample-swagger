@@ -9,11 +9,11 @@ post:
     content:
       application/json:
         schema:
-          $ref: "../../schemas/user.yml"
+          $ref: "../../openapi.yml#/components/schemas/User"
   responses:
     default:
       description: successful operation
       content:
         application/json:
           schema:
-            $ref: "../../schemas/user.yml"
+            $ref: "../../openapi.yml#/components/schemas/User"

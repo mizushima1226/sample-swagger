@@ -17,7 +17,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../../schemas/user.yml"
+            $ref: "../../openapi.yml#/components/schemas/User"
     "400":
       description: Invalid username supplied
     "404":
@@ -40,7 +40,7 @@ put:
     content:
       application/json:
         schema:
-          $ref: "../../schemas/user.yml"
+          $ref: "../../openapi.yml#/components/schemas/User"
   responses:
     default:
       description: successful operation

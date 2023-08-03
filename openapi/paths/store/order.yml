@@ -8,13 +8,13 @@ post:
     content:
       application/json:
         schema:
-          $ref: "../../schemas/order.yml"
+          $ref: "../../openapi.yml#/components/schemas/Order"
   responses:
     "200":
       description: successful operation
       content:
         application/json:
           schema:
-            $ref: "../../schemas/order.yml"
+            $ref: "../../openapi.yml#/components/schemas/Order"
     "405":
       description: Invalid input
